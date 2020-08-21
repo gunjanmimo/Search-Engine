@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import AppsIcon from "@material-ui/icons";
+import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
 
 export default function Home() {
@@ -24,7 +24,13 @@ export default function Home() {
       </div>
 
       {/* home body */}
-      <div className="home__body"></div>
+      <div className="home__body">
+        <img
+          src="https://pngimg.com/uploads/google/google_PNG19644.png"
+          alt=""
+          srcset=""
+        />
+      </div>
     </div>
   );
 }
