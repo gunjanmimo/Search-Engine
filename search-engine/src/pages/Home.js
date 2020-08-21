@@ -32,7 +32,9 @@ export default function Home() {
           srcset=""
         />
         <div className="home__inputContainer">
-          <Search />
+          <center>
+            <Search />
+          </center>
         </div>
       </div>
     </div>
