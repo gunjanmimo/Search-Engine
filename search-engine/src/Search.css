@@ -16,3 +16,7 @@
     font-size: medium;
     border: none;
 }
+
+.search__input>input:focus {
+    outline-width: 0;
+}
