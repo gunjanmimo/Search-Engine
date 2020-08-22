@@ -3,13 +3,15 @@ import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 function Search() {
   const [input, setInput] = useState("");
-
+  const history = useHistory();
   const search = (e) => {
     e.preventDefault();
-    console.log("you hit the search button");
+    console.log("you hit the search button for >>>", input);
+    history.push("/search");
   };
 
   return (
