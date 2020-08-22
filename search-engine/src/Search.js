@@ -9,10 +9,11 @@ function Search() {
 
   const search = (e) => {
     e.preventDefault();
+    console.log("you hit the search button");
   };
 
   return (
-    <div className="Search">
+    <form className="Search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
@@ -20,12 +21,12 @@ function Search() {
       </div>
 
       <div className="search__button">
-        <Button onClick={search} variant="outlined">
+        <Button type="submit" onClick={search} variant="outlined">
           Google Search
         </Button>
         <Button variant="outlined">I'm Feeling Lucky</Button>
       </div>
-    </div>
+    </form>
   );
 }
 
