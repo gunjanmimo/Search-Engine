@@ -15,13 +15,39 @@
     margin-right: 50px;
 }
 
-.searchPage__headerBody>.search>.search__input {
+.searchPage__headerBody>.Search>.search__input {
     margin-top: 0;
     width: unset;
     margin: unset;
     max-width: unset;
 }
 
-.searchPage__headerBody>.search {
-    background-color: aqua;
+.searchPage__option {
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin: 10px;
+}
+
+.searchPage__optionsLeft a,
+.searchPage__optionsRight a {
+    text-decoration: none;
+    color: grey;
+}
+
+.searchPage__optionsLeft,
+.searchPage__optionsRight {
+    display: flex;
+}
+
+.searchPage__optionsRight {
+    margin-left: 80px;
+}
+
+.searchPage__options {
+    display: flex;
+}
+
+.searchPage__options a {
+    margin-left: 5px;
 }
