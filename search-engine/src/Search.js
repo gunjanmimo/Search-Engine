@@ -17,7 +17,7 @@ function Search({ hideButtons = false }) {
     console.log("you hit the search button for >>>", input);
 
     dispatch({
-      type: actionTypes.SET_SEARCH_TER,
+      type: actionTypes.SET_SEARCH_TERM,
       term: input,
     });
 
