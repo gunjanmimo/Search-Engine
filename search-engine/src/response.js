@@ -1,7 +1,4 @@
-// 20200824014716
-// https://www.googleapis.com/customsearch/v1?key=AIzaSyDUIL8FBpRGLjT8USTorqYE4DIyS8u2YEE&cx=f68196c13895e8d81&q=tesla
-
-{
+export default {
     "kind": "customsearch#search",
     "url": {
         "type": "application/json",
