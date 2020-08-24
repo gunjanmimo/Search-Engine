@@ -8,7 +8,7 @@ export const actionType={
 
 const reducer = (state, action)=>{
     console.log(action);
-    
+
     switch(action.type){
         case actionType.SET_SEARCH_TERM:
             return {
@@ -19,3 +19,5 @@ const reducer = (state, action)=>{
                 return state;
     }
 };
+
+export default reducer;
