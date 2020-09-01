@@ -15,9 +15,9 @@ import MoreIncon from "@material-ui/icons/More";
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // live api call
-  //const { data } = useGoogleSearch(term);
-
-  const data = Response;
+  const { data } = useGoogleSearch(term);
+  // mock api call
+  //const data = Response;
 
   console.log(data);
   return (
@@ -71,7 +71,7 @@ function SearchPage() {
           </div>
         </div>
       </div>
-      {true && (
+      {term && (
         <div className="searchPage__result">
           <p className="searchPage_resultCount">
             About {data?.searchInformation.formattedTotalResults} result
